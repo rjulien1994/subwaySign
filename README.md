@@ -25,3 +25,4 @@ the libraries managment tool of arduino idle.
 The python libraries used are google.transit, protobuf_to_dict, numpy, requests, time, serial, struct which are included in python 3.7 
 or can be downloaded from your command prompt using pip.
 
+The python script fetches and treats the data then sends it to the transmitter thru serial communication every 15 seconds then checks if the sign is still trun on and in range. The transmitter is just a bridge from the python script and the sign. Finally the sign receives the data from the transmitter and displays it on the sign as well as constantly broadcast wether it is on or off to stop python from loading data that won't be displayed.
